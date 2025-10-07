@@ -30,23 +30,29 @@ Main features:
 ## ⚙️ Installation
 
 1. **Clone the repository or download the files:**
-   git clone https://github.com/yourusername/spotify-macropad.git
-   cd spotify-macropad
+   
+         git clone https://github.com/yourusername/spotify-macropad.git
+         cd spotify-macropad
 
-2. **Install dependencies:**
-   pip install spotipy keyboard
+3. **Install dependencies:**
 
-3. **Create an app on the Spotify Developer Dashboard**  
+         pip install spotipy keyboard
+
+5. **Create an app on the Spotify Developer Dashboard**
+   
    - Copy your Client ID, Client Secret, and define a Redirect URI (for example, http://localhost:8888/callback).
 
-4. **Edit the configuration:**
+7. **Edit the configuration:**
+   
    Open spotify_macropad.py (or the English version) and replace:
-   CLIENT_ID = "YOUR_CLIENT_ID"
-   CLIENT_SECRET = "YOUR_CLIENT_SECRET"
-   REDIRECT_URI = "YOUR_REDIRECT_URI"
+   
+         CLIENT_ID = "YOUR_CLIENT_ID"
+         CLIENT_SECRET = "YOUR_CLIENT_SECRET"
+         REDIRECT_URI = "YOUR_REDIRECT_URI"
 
-5. **Run the script:**
-   python spotify_macropad.py
+9. **Run the script:**
+    
+         python spotify_macropad.py
 
    The first time you run it, a browser window will open asking for Spotify authorization.
 
@@ -83,9 +89,10 @@ Right Ctrl | Mute / Unmute
 ## 💾 File Structure
 
 By default, the script creates the following directory in your user folder:
-Documents/naarvent’s projects/SpotifyMacroPad/
- ├── .spotify_oauth_cache     (authentication data)
- └── track_history.txt        (track history)
+
+      Documents/naarvent’s projects/SpotifyMacroPad/
+      ├── .spotify_oauth_cache     (authentication data)
+      └── track_history.txt        (track history)
 
 ---
 
@@ -97,4 +104,4 @@ Documents/naarvent’s projects/SpotifyMacroPad/
 - Logs playback history automatically
 - Includes fallback logic when playback is inactive
 
----
+
